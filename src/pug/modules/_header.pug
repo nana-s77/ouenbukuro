@@ -1,0 +1,7 @@
+header.header
+  p.header__logo
+    img(src="./images/pc_src/logo.svg", alt="株式会社CHALLENGE　TODAY")
+  nav
+    ul.header__navList
+        each header__naviItem in ["応援袋とは？","応援袋の想い","応援袋はどこでもらえるの？","配布先","応援袋だから出来る事","応援袋と一般レジ袋との比較","応援袋活用術","よくあるご質問","応援袋に広告を出稿検討される方"]
+          li.header__navItem #{header__naviItem}
