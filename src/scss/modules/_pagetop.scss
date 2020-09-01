@@ -5,5 +5,8 @@
     position: fixed;
     right: 10%;
     bottom: 0;
+    @include sp {
+      right: 0;
+    }
   }
 }

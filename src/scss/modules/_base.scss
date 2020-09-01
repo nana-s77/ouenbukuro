@@ -9,10 +9,16 @@ body {
 
 section {
   text-align: center;
+  @include sp {
+    text-align: left;
+  }
 }
 
 section:not(:first-of-type) {
   padding-top: 112px;
+  @include sp {
+    padding-top: 64px;
+  }
 }
 
 .section__title {
@@ -20,16 +26,27 @@ section:not(:first-of-type) {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 800;
   color: $bese-color;
+  @include sp {
+    letter-spacing: -0.02em;
+    font-size: 2.4em;
+  }
 }
 
 .section__text {
   margin-top: 20px;
   font-size: 1.8em;
+  @include sp {
+    font-size: 1.6em;
+  }
 }
 
 .inner {
   max-width: 876px;
   margin: 0 auto;
+  @include sp {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .head__wrap {
@@ -38,4 +55,8 @@ section:not(:first-of-type) {
   background-image: url("../images/pc_src/mv.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @include sp {
+    height: 540px;
+    background-image: url("../images/sp_src/mv@2x.png");
+  }
 }

@@ -5,16 +5,35 @@
     font-size: 2em;
     font-weight: bold;
     color: $main-color;
+    @include sp {
+      margin-top: 10px;
+    }
+
+    &::before {
+      @include sp {
+        content: "●";
+        color: $sub-color;
+        padding-right: 10px;
+        font-size: 14px;
+      }
+    }
   }
 
   &__listContent {
     margin-top: 10px;
     font-size: 1.8em;
+    @include sp {
+      font-size: 1.6em;
+      margin-top: 8px;
+    }
   }
 
   &__text {
     margin-top: 20px;
     font-size: 1.8em;
+    @include sp {
+      font-size: 1.6em;
+    }
   }
 
   &__link {

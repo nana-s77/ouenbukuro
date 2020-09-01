@@ -2,7 +2,7 @@
 .use {
   &__wrap {
     background-color: #faf6df;
-    padding: 60px 0;
+    padding: 30px 0;
   }
 
   &__list {
@@ -10,10 +10,24 @@
     flex-wrap: wrap;
     max-width: 816px;
     margin: 40px auto 0 auto;
+    @include sp {
+      margin-top: 20px;
+      padding: 0 20px;
+      justify-content: space-between;
+    }
   }
 
   &__listItem {
     width: 400px;
+    @include sp {
+      width: 130px;
+    }
+  }
+
+  &__listImage {
+    @include sp {
+      width: 150px;
+    }
   }
 
   &__listText {

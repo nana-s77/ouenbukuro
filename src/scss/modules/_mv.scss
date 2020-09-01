@@ -1,5 +1,13 @@
 @use "./mixin";
 .mv {
+  &__wrap {
+    position: relative;
+    height: 670px;
+    @include sp {
+      height: 540px;
+    }
+  }
+
   &__title {
     position: relative;
     top: 60px;
@@ -8,15 +16,46 @@
     justify-content: center;
   }
 
+  &__imgPc {
+    @include sp {
+      display: none;
+    }
+  }
+
+  &__imgSp {
+    display: none;
+    @include sp {
+      display: block;
+      width: 334px;
+    }
+  }
+
   &__contactBtn {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+    @include sp {
+      bottom: 60px;
+    }
 
     &:hover {
       cursor: pointer;
       opacity: 0.8;
+    }
+  }
+
+  &__btnPc {
+    @include sp {
+      display: none;
+    }
+  }
+
+  &__btnSp {
+    display: none;
+    @include sp {
+      display: block;
+      width: 270px;
     }
   }
 }

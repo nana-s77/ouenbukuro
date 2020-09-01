@@ -7,4 +7,8 @@
     repeat: no-repeat;
     position: top 90px right 20%;
   }
+  @include sp {
+    padding-top: 64px;
+    background: none;
+  }
 }

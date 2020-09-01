@@ -3,11 +3,25 @@
 .header {
   width: 80vw;
   margin: 0 auto;
+  @include sp {
+    width: 100vw;
+    padding: 0 10px;
+  }
+
   &__wrap {
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 80vw;
+    @include sp {
+      width: 100vw;
+    }
+  }
+
+  &__logo {
+    @include sp {
+      width: 40px;
+    }
   }
 
   &__nav {
@@ -26,6 +40,9 @@
     width: 40px;
     height: 2px;
     background-color: $main-color;
+    @include sp {
+      left: -30px;
+    }
   }
 
   &__hamLine1 {

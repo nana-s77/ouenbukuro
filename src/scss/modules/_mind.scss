@@ -11,5 +11,10 @@
     text-shadow: 1px 1px #fff;
     font-weight: bold;
     @include box(#fff3af);
+    @include sp {
+      padding: 15px 20px;
+      font-size: 2.2em;
+      text-align: center;
+    }
   }
 }

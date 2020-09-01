@@ -28,10 +28,20 @@
 
   &__head {
     flex: 1;
+    @include sp {
+      flex: auto;
+      width: 65px;
+    }
   }
 
   &__item {
     margin-left: 30px;
     flex: 1;
+    @include sp {
+      margin-left: 0;
+      flex: auto;
+      width: 250px;
+      text-align: left;
+    }
   }
 }

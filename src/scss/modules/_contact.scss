@@ -7,6 +7,9 @@
     text-align: left;
     border: 1px solid #ededed;
     @include box($light-gray);
+    @include sp {
+      padding: 20px 10px;
+    }
   }
 
   &__formTitle {
@@ -23,11 +26,6 @@
   }
 
   &__formlist {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // min-height: 620px;
-
     font-size: 16px;
     font-weight: bold;
   }
@@ -42,6 +40,9 @@
     height: 24px;
     border: 1px solid $light-gray;
     padding: 2px 2px;
+    @include sp {
+      width: 300px;
+    }
   }
 
   ::placeholder {
@@ -64,6 +65,9 @@
     font-size: 1.6em;
     overflow: scroll;
     border: 1px solid $light-gray;
+    @include sp {
+      width: 300px;
+    }
   }
 
   &__submit {
@@ -75,6 +79,10 @@
     @include box($light-gray);
     border-radius: 13px;
     background-color: #fff;
+    @include sp {
+      height: 50px;
+      font-size: 1.6em;
+    }
 
     &:hover {
       background-color: #f0f0f0;

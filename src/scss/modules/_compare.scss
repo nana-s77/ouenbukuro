@@ -5,14 +5,39 @@
     justify-content: space-between;
     max-width: 600px;
     margin: 40px auto 0 auto;
+    // @include sp {
+    //   width: 106px;
+    // }
+  }
+
+  &__listItem {
+    text-align: center;
   }
 
   &__listHead {
-    font-size: 22px;
+    font-size: 2.2em;
+    @include sp {
+      font-size: 1.6em;
+    }
+  }
+
+  &__listOen {
+    @include sp {
+      width: 91px;
+    }
+  }
+
+  &__listReji {
+    @include sp {
+      width: 106px;
+    }
   }
 
   &__listText {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1.8em;
+    @include sp {
+      font-size: 1.4em;
+    }
   }
 }
