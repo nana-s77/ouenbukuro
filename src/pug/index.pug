@@ -3,21 +3,25 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="keyword" content="全国,レジ袋,無料,オフィス,幼稚園,保育園,小学校,中学校,高等学校,応援袋,0enbukuro")
+    meta(name="discription" content="レジ袋を無料で受け取るなら応援袋！全国のオフィス・幼稚園・保育園・小学校・中学校・高等学校で0円で受け取り可能。レジ袋のマメ知識・環境問題についての最新情報も満載。")
     link(href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800;900&display=swap" rel="stylesheet")
-    title Document
+    link(href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet")
+    title 【応援袋】全国のオフィス・学校教育の場で無料のレジ袋を受け取りができます。
 
   body
     .head__wrap
       include modules/_header.pug
       include modules/_mv.pug
-    include modules/_pagetop.pug
-    include modules/_about.pug
-    include modules/_mind.pug
-    include modules/_where.pug
-    include modules/_destination.pug
-    include modules/_can.pug
-    include modules/_compare.pug
-    include modules/_use.pug
-    include modules/_question.pug
-    include modules/_contact.pug
+    main
+      include modules/_about.pug
+      include modules/_mind.pug
+      include modules/_where.pug
+      include modules/_destination.pug
+      include modules/_can.pug
+      include modules/_compare.pug
+      include modules/_use.pug
+      include modules/_question.pug
+      include modules/_contact.pug
     include modules/_footer.pug
+    include modules/_pagetop.pug

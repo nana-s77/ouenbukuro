@@ -5,9 +5,9 @@
     justify-content: space-between;
     max-width: 600px;
     margin: 40px auto 0 auto;
-    // @include sp {
-    //   width: 106px;
-    // }
+    @include sp {
+      margin-top: 20px;
+    }
   }
 
   &__listItem {
@@ -24,12 +24,14 @@
   &__listOen {
     @include sp {
       width: 91px;
+      margin-top: 10px;
     }
   }
 
   &__listReji {
     @include sp {
-      width: 106px;
+      width: 109px;
+      margin-top: 10px;
     }
   }
 

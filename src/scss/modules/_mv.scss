@@ -10,10 +10,14 @@
 
   &__title {
     position: relative;
-    top: 60px;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include sp {
+      top: 40px;
+    }
   }
 
   &__imgPc {
@@ -32,11 +36,12 @@
 
   &__contactBtn {
     position: absolute;
-    bottom: 40px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
     @include sp {
-      bottom: 60px;
+      bottom: 75px;
     }
 
     &:hover {

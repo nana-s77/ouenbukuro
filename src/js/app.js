@@ -1,15 +1,12 @@
 import "../scss/style.scss";
+var $ = require("jQuery");
 
-class Test {
-  constructor(name) {
-    this.name = name;
-  }
-
-  logger() {
-    console.log("Hello", this.name);
-  }
-}
-
-let test = new Test("world");
-
-test.logger();
+$(function () {
+  $(".humberger").on("click", function () {
+    if ($("body").hasClass("nav-open")) {
+      $("body").removeClass("nav-open");
+    } else {
+      $("body").addClass("nav-open");
+    }
+  });
+});
