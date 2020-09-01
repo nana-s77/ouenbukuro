@@ -1,0 +1,23 @@
+$bg-color: #fff;
+$main-color: #31b26b; //green
+$sub-color: #ffd271; //yellow
+$bese-color: #14308a; //navy
+$point-color: #ec6a40; //red
+$light-gray: #ebebeb;
+
+@mixin afterElm {
+  content: "";
+  display: block;
+}
+
+@mixin box($color) {
+  border-radius: 20px;
+  box-shadow: $color 1px 1px 3px;
+}
+
+@mixin headTitle {
+  font: {
+    size: 38px;
+  }
+  color: $sub-color;
+}

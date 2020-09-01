@@ -1,7 +1,32 @@
 header.header
-  p.header__logo
-    img(src="./images/pc_src/logo.svg", alt="株式会社CHALLENGE　TODAY")
-  nav
-    ul.header__navList
-        each header__naviItem in ["応援袋とは？","応援袋の想い","応援袋はどこでもらえるの？","配布先","応援袋だから出来る事","応援袋と一般レジ袋との比較","応援袋活用術","よくあるご質問","応援袋に広告を出稿検討される方"]
-          li.header__navItem #{header__naviItem}
+  .header__wrap
+    p.header__logo
+      a(href="#")
+        img(src="./images/pc_src/logo.svg", alt="株式会社CHALLENGE　TODAY")
+
+    .header__menu
+      .header__ham
+        span.header__hamLine.header__hamLine1
+        span.header__hamLine.header__hamLine2
+        span.header__hamLine.header__hamLine3
+
+      nav.header__nav
+        ul.header__navList
+          li.header__navItem
+            a(href="#about") 応援袋とは？
+          li.header__navItem
+            a(href="#mind") 応援袋の想い
+          li.header__navItem
+            a(href="#where") 応援袋はどこでもらえるの？
+          li.header__navItem
+            a(href="#distination") 配布先
+          li.header__navItem
+            a(href="#can") 応援袋だから出来る事
+          li.header__navItem
+            a(href="#compare") 応援袋と一般レジ袋との比較
+          li.header__navItem
+            a(href="#use") 応援袋活用術
+          li.header__navItem
+            a(href="#question") よくあるご質問
+          li.header__navItem
+            a(href="#contact") 応援袋に広告を出稿検討される方

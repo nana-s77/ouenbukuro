@@ -3,8 +3,21 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800;900&display=swap" rel="stylesheet")
     title Document
 
   body
-    //- include sub/sub.pug
-    include modules/_header.pug
+    .head__wrap
+      include modules/_header.pug
+      include modules/_mv.pug
+    include modules/_pagetop.pug
+    include modules/_about.pug
+    include modules/_mind.pug
+    include modules/_where.pug
+    include modules/_destination.pug
+    include modules/_can.pug
+    include modules/_compare.pug
+    include modules/_use.pug
+    include modules/_question.pug
+    include modules/_contact.pug
+    include modules/_footer.pug

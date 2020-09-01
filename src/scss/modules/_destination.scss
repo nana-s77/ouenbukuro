@@ -1,0 +1,23 @@
+@use "./mixin";
+.destination {
+  &__listHead {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: $main-color;
+  }
+
+  &__listContent {
+    margin-top: 10px;
+    font-size: 1.8em;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 1.8em;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

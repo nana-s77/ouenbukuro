@@ -1,9 +1,17 @@
 @charset "UTF-8";
 
-$bg-color: #fff;
-
-html {
-  body {
-    background: rgba($bg-color, 1);
-  }
-}
+@import "./modules/_reset";
+@import "./modules/_mixin";
+@import "./modules/_base";
+@import "./modules/_header";
+@import "./modules/_mv";
+@import "./modules/_about";
+@import "./modules/_mind";
+@import "./modules/_destination";
+@import "./modules/_can";
+@import "./modules/_compare";
+@import "./modules/_use";
+@import "./modules/_question";
+@import "./modules/_contact";
+@import "./modules/_footer";
+@import "./modules/_pagetop";

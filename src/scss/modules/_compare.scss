@@ -1,0 +1,18 @@
+@use "./mixin";
+.compare {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+  }
+
+  &__listHead {
+    font-size: 22px;
+  }
+
+  &__listText {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}

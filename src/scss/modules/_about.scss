@@ -1,0 +1,10 @@
+@use "./mixin";
+
+.about {
+  padding-top: 112px;
+  background: {
+    image: url("../images/pc_src/top_hukuroimg.png");
+    repeat: no-repeat;
+    position: top 90px right 20%;
+  }
+}

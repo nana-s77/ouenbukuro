@@ -1,0 +1,22 @@
+@use "./mixin";
+.use {
+  &__wrap {
+    background-color: #faf6df;
+    padding: 60px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 816px;
+    margin: 40px auto 0 auto;
+  }
+
+  &__listItem {
+    width: 400px;
+  }
+
+  &__listText {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,41 @@
+@use "./mixin";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+section {
+  text-align: center;
+}
+
+section:not(:first-of-type) {
+  padding-top: 112px;
+}
+
+.section__title {
+  font-size: 2.8em;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 800;
+  color: $bese-color;
+}
+
+.section__text {
+  margin-top: 20px;
+  font-size: 1.8em;
+}
+
+.inner {
+  max-width: 876px;
+  margin: 0 auto;
+}
+
+.head__wrap {
+  width: 100vw;
+  height: 670px;
+  background-image: url("../images/pc_src/mv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

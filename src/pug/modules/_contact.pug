@@ -1,0 +1,75 @@
+section.contact#contact
+  h2.section__title 応援袋に広告を出稿検討される方
+  p.section__text
+    | 応援袋のスポンサーを検討されている方は以下フォームに必要事項を入力お願いします。
+    br
+    | 媒体資料やオリジナルプランをご提供致します。
+
+  .contact__form
+    h3.contact__formTitle お問い合わせフォーム
+    form.contact__formContent
+      ul.contact__formlist
+        li.contact__formItem
+          label.contact__itemHead(for="contentSelect") お問い合わせ内容
+          select.contact__item.contact__itemSelect(name="contentSelect")
+            option(disabled selected value) 選択してください
+            option(value="メディア資料請求") メディア資料請求
+            option(value="配布を希望") 配布を希望
+            option(value="プレス") プレス
+            option(value="その他") その他
+
+        li.contact__formItem
+          label.contact__itemHead(for="contactContent") 詳細
+          textarea.contact__item.contact__item--textArea(name="contactContent", placeholder="お問い合わせ内容の詳細をご自由にご記入ください")
+
+        li.contact__formItem
+          label.contact__itemHead(for="name") お名前
+          input.contact__item(type="text" name="contactContent", placeholder="山田　太郎")
+
+        li.contact__formItem
+          label.contact__itemHead(for="companyName") 会社名
+          input.contact__item(type="text" name="companyName", placeholder="株式会社 CHALLENGE TODAY")
+
+        li.contact__formItem
+          label.contact__itemHead.contact__itemHead--option(for="departmentName") 部署名
+          input.contact__item(type="text" name="departmentName", placeholder="マーケティング部")
+
+        li.contact__formItem
+          label.contact__itemHead.contact__itemHead--option(for="mail") メールアドレス
+          input.contact__item(type="text" name="mail", placeholder="info@challenge-today.net")
+
+        li.contact__formItem
+          label.contact__itemHead.contact__itemHead--option(for="mail") 電話番号
+          input.contact__item(type="text" name="mail", placeholder="00-0000-0000")
+
+      .contact__promise
+        pre
+          | 個人情報の取り扱いについて
+          |お問い合わせに関する個人情報を収集するにあたり、株式会社CHALLENGE TO DAYではお問い合わせをされる方に対し、
+          | 以下の事項を通知いたします。
+          | 下記の事項をご理解いただき、同意を得られた応募者の方からのみ当該個人情報を収集し、その目的から逸脱しない範囲で利用します。
+
+          | ■ 収集する項目
+          | ・会社名、部署名、お名前、電話番号、E-MAIL
+
+          | ■ 収集目的
+          | ・お問い合わせへの対応
+          | ・弊社取り扱い商品およびサービスに関するご案内
+          | ・弊社が運営および出展するイベントに関するご案内
+          | ・弊社が運営するメールマガジンの配信
+
+          | ■ 個人情報の利用・提供　取得された個人情報は当社の規定に則り、目的以外には利用・提供委託致しません。
+
+          | ■ 個人情報を当社に与えることの任意性、当該情報を与えない場合に生じる結果
+          | ・当社への個人情報の提供は任意ですが、提供されなかった場合はお問い合わせに応じることが出来かねますので、予めご了承ください。
+
+          | ■ その他
+          | ・お客様より差し出された個人情報に関しては、開示及び開示の結果、当該情報が誤っている場合に訂正または削除を要求する権利がお客様側に存在します。
+          | 上記のご要望については、当社の個人情報管理担当がご対応させていただきます。
+          | 受け付けましたお問い合わせは、お客様への応対が完了した時点で破棄いたします。
+
+          | ■ 個人情報の取り扱い/苦情等のお問い合わせ先
+          | info@challenge-today.net
+
+      button.contact__submit
+        input.contact__submitContent(type="submit" value="送信")

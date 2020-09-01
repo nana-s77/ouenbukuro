@@ -1,0 +1,15 @@
+@use "./mixin";
+
+.mind {
+  &__text {
+    max-width: 816px;
+    margin: 20px auto 0 auto;
+    padding: 20px 0;
+    background-color: #fff3af;
+    font-size: 2.8em;
+    color: $point-color;
+    text-shadow: 1px 1px #fff;
+    font-weight: bold;
+    @include box(#fff3af);
+  }
+}

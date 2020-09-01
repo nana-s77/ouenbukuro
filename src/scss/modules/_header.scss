@@ -1,0 +1,42 @@
+@use "./mixin";
+
+.header {
+  width: 80vw;
+  margin: 0 auto;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 80vw;
+  }
+
+  &__nav {
+    display: none;
+  }
+  &__ham {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__hamLine {
+    position: absolute;
+    left: 10px;
+    width: 40px;
+    height: 2px;
+    background-color: $main-color;
+  }
+
+  &__hamLine1 {
+    top: 15px;
+  }
+
+  &__hamLine2 {
+    top: 25px;
+  }
+
+  &__hamLine3 {
+    top: 35px;
+  }
+}

@@ -1,0 +1,9 @@
+@use "./mixin";
+.pagetop {
+  position: relative;
+  &__wrap {
+    position: fixed;
+    right: 10%;
+    bottom: 0;
+  }
+}

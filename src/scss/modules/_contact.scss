@@ -1,0 +1,90 @@
+@use "./mixin";
+.contact {
+  &__form {
+    max-width: 876px;
+    margin: 30px auto 0 auto;
+    padding: 30px;
+    text-align: left;
+    border: 1px solid #ededed;
+    @include box($light-gray);
+  }
+
+  &__formTitle {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &__formContent {
+    margin-top: 20px;
+  }
+
+  &__formItem {
+    margin-top: 25px;
+  }
+
+  &__formlist {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // min-height: 620px;
+
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__itemHead {
+    display: block;
+  }
+
+  &__item {
+    margin-top: 15px;
+    width: 816px;
+    height: 24px;
+    border: 1px solid $light-gray;
+    padding: 2px 2px;
+  }
+
+  ::placeholder {
+    color: #adadad;
+  }
+
+  &__item--textArea {
+    height: 130px;
+  }
+
+  &__itemSelect {
+    width: 300px;
+  }
+
+  &__promise {
+    width: 816px;
+    height: 130px;
+    margin-top: 25px;
+    padding: 3px;
+    font-size: 1.6em;
+    overflow: scroll;
+    border: 1px solid $light-gray;
+  }
+
+  &__submit {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 160px;
+    height: 60px;
+    border: 2px solid $main-color;
+    @include box($light-gray);
+    border-radius: 13px;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  &__submitContent {
+    font-size: 18px;
+    color: $main-color;
+    border: none;
+    background-color: transparent;
+  }
+}
